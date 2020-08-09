@@ -34,7 +34,7 @@ public class Rot13 {
 				scanner.close();
 				break;
 			case "exit":
-				System.out.println("EXIT");
+				System.out.println("EXITexi");
 				System.out.println("THANK YOU FOR USING THIS EPIC CLI APPLICATION.");
 				scanner.close();
 				break;
@@ -52,7 +52,7 @@ public class Rot13 {
 		System.out.println("Please enter the message you wish to encrypt: ");
 		
 		messageToEncrypt = scanner.nextLine().trim().toLowerCase();
-		
+		Algorithm.rearrangeMessage(messageToEncrypt);
 		
 		scanner.close();
 	}
@@ -64,6 +64,9 @@ public class Rot13 {
 		
 		System.out.println("hellowearDECRYPTIN");
 		System.out.println("Please enter the message you wish to decrypt: ");
+		
+		messageToDecrypt = scanner.nextLine().trim().toLowerCase();
+		Algorithm.rearrangeMessage(messageToDecrypt);
 		
 		scanner.close();
 	}
